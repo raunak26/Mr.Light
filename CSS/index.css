@@ -14,7 +14,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: #000000;
-    font-family: "Poppins", sans-serif;
+    font-style: italic;
 }
 
 .logo {
@@ -142,38 +142,21 @@ nav {
     height: auto;
 }
 
-.transition{
+.transition aside{
+    width: 50%;
+    color: #FFFFFF;
+    padding-left: 80px;
+    padding-right: 100px;
+    padding-top: 100px;
+    font-size: 23px;
+    /*padding-left: 15px;*/
+    /*margin-left: 15px;*/
+    float: right;
+    font-style: italic;
 }
 
 .transition img{
     width: 50%;
-    height: auto;
-    vertical-align: middle;
-    float: left;
-    display: inline-block;
-    margin: 25px 10px;
-}
-.firstPara{
-    padding-top: 200px;
-}
-.secondPara{
-    padding-top: 35px;
-}
-p{
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-    color: white;
-    display: block;
-    margin-left: 25px;
-}
+    padding-left: 80px;
 
-h1{
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-    color: white;
-    
 }

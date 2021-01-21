@@ -4,27 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Mr.Light</title>
 	<link rel="icon" type="image/png" href="images/mrlight.png"/>
-	<link rel="stylesheet" href="CSS/index.css">
+	<link rel="stylesheet" href="CSS/whyUs.css">
 	<link href="https://fonts.googleapis.com/css?family=Psoppins%26display=swap" rel="stylesheet">
-</head>
-<body>
-	<nav>
-	    <div class="logo">
-	        <a href="index.html"><img src="images/mrlight.png" alt="logo" style="width: 200px"></a>
-	    </div>
-	    <ul class="nav-links">
-	    	<li><a href="index.html">Home</a></li>
-	        <li><a href="philosophy.html">Philosophy</a></li>
-	        <li><a href="whyUs.html">Why Mr.Light</a></li>
-	        <li><a href="aboutUs.html">About Us</a></li>
-	        <li><a href="approach.html">Approach</a></li>
-	    </ul>
-	    <div class="burger">
-	        <div class="line1"></div>
-	        <div class="line2"></div>
-	        <div class="line3"></div>
-	    </div>
-	</nav>
 	<script>
 		function navSlide() {
 		    const burger = document.querySelector(".burger");
@@ -45,11 +26,30 @@
 		        });
 		        //Burger Animation
 		        burger.classList.toggle("toggle");
-		    });
-		    
+		    });		    
 		}
-
 		navSlide();
-	</script>
+	</script>	
+</head>
+<nav>
+	<div class="logo">
+	    <a href="index.html"><img src="images/mrlight.png" alt="logo" style="width: 200px"></a>
+	</div>
+	<ul class="nav-links">
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="philosophy.html">Philosophy</a></li>
+	    <li><a href="whyUs.html">Why Mr.Light</a></li>
+	    <li><a href="aboutUs.html">About Us</a></li>
+	    <li><a href="approach.html">Approach</a></li>
+	</ul>
+	<div class="burger">
+	    <div class="line1"></div>
+	    <div class="line2"></div>
+	    <div class="line3"></div>
+	</div>
+</nav>
+<body>
+	<canvas id="canvas"></canvas>
+	<script type="text/javascript" src="js/whyUs.js"></script>
 </body>
 </html>
