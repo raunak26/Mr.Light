@@ -6,7 +6,7 @@
 }
 
 nav {
-    position: fixed;
+    position: static;
     top: 0;
     width: 100%;
     display: flex;
@@ -137,9 +137,26 @@ nav {
 }
 
 .background{
-    padding-top: 35px;  
-    width: 100%;
-    height: auto;
+    background: url("../images/Forwebsite_Mrlight.png"); 
+    background-repeat: no-repeat;
+    background-size: 950px;
+    background-position: center; 
+    margin: auto;
+    width: 700px;
+    height: 700px;
+}
+
+.background:hover{
+    background: url("../images/2Forwebsite_Mrlight.png"); 
+    background-repeat: no-repeat;
+    background-size: 950px;
+    background-position: center; 
+    width: 700px;
+    height: 700px;
+}
+
+.transition{
+    padding-top: 100px;
 }
 
 .transition aside{
