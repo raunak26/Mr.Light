@@ -1,55 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Mr.Light</title>
-	<link rel="icon" type="image/png" href="images/mrlight.png"/>
-	<link rel="stylesheet" href="CSS/whyUs.css">
-	<link href="https://fonts.googleapis.com/css?family=Psoppins%26display=swap" rel="stylesheet">
-	<script>
-		function navSlide() {
-		    const burger = document.querySelector(".burger");
-		    const nav = document.querySelector(".nav-links");
-		    const navLinks = document.querySelectorAll(".nav-links li");
-		    
-		    burger.addEventListener("click", () => {
-		        //Toggle Nav
-		        nav.classList.toggle("nav-active");
-		        
-		        //Animate Links
-		        navLinks.forEach((link, index) => {
-		            if (link.style.animation) {
-		                link.style.animation = ""
-		            } else {
-		                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-		            }
-		        });
-		        //Burger Animation
-		        burger.classList.toggle("toggle");
-		    });		    
-		}
-		navSlide();
-	</script>	
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="images/mrlight.png"/>
+  <link rel="stylesheet" href="CSS/whyUs.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/whyUs.js"></script>
 </head>
-<nav>
-	<div class="logo">
-	    <a href="index.html"><img src="images/mrlight.png" alt="logo" style="width: 200px"></a>
-	</div>
-	<ul class="nav-links">
-	    <li><a href="index.html">Home</a></li>
-	    <li><a href="philosophy.html">Philosophy</a></li>
-	    <li><a href="whyUs.html">Why Mr.Light</a></li>
-	    <li><a href="aboutUs.html">About Us</a></li>
-	    <li><a href="approach.html">Approach</a></li>
-	</ul>
-	<div class="burger">
-	    <div class="line1"></div>
-	    <div class="line2"></div>
-	    <div class="line3"></div>
-	</div>
-</nav>
-<body>
-	<canvas id="canvas"></canvas>
-	<script type="text/javascript" src="js/whyUs.js"></script>
+<body> 
+  <script src="js/whyUs.js"></script>
+  <div class="stem-wrapper">
+    <div class="stem"></div>
+    <div class="stem-background"></div>
+  </div>
+
+  <header class="section header">
+    <div class="section-inner">
+
+      <div class="master-head">
+        <h1 class="page-title">What Sets Us Apart</h1>
+<!--         <p class="page-description">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water.</p> -->
+        <p class="scroll-button" onClick="$('.post-wrapper .post:first-child .stem-overlay .icon').click();">Ready to go for a ride?</p>
+      </div>
+
+    </div> <!-- section-inner -->
+  </header> <!-- header -->
+
+  <div class="section main-content">
+    <div class="section-inner">
+
+      <div class="stem-padding"></div>
+
+      <div class="post-wrapper">
+
+        <article class="post bitbucket-icon">
+          <div class="stem-overlay">
+            <div class="icon"></div>
+            <div class="stem-mask"></div>
+          </div>
+
+          <div class="post-content">
+<!--             <p class="meta">Written yesterday at 8:56 pm</p> -->
+            <h2 class="post-title">Excellent Customer Service</h2>
+            <div class="entry-content">
+              <p>Our teams are equipped with professional lighting knowledge and well trained with the right attitude of 'customer comes' first mindset.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="post m-icon" data-stem-color="green">
+          <div class="stem-overlay">
+            <div class="icon"></div>
+            <div class="stem-mask"></div>
+          </div>
+
+          <div class="post-content">
+<!--             <p class="meta">Written yesterday at 8:56 pm</p> -->
+            <h2 class="post-title">Aftersales Service</h2>
+            <div class="entry-content">
+              <p>When you engage us, there will be a dedicated After Sales team to keep in touch with you. Our knowledgable team possess defect analysis ability.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="post music-icon" data-stem-color="yellow">
+          <div class="stem-overlay">
+            <div class="icon"></div>
+            <div class="stem-mask"></div>
+          </div>
+
+          <div class="post-content">
+<!--             <p class="meta">Written yesterday at 8:56 pm</p> -->
+            <h2 class="post-title">Lighting Simulation Ability</h2>
+            <div class="entry-content">
+              <p>We provide consultation and visual lighting simulation plan to assist you in planning and executing end to end lighting system in your facilities.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="post twitter-icon" data-stem-color="white">
+          <div class="stem-overlay">
+            <div class="icon"></div>
+            <div class="stem-mask"></div>
+          </div>
+
+          <div class="post-content">
+<!--             <p class="meta">Written yesterday at 8:56 pm</p> -->
+            <h2 class="post-title">Good Quality Control</h2>
+            <div class="entry-content">
+              <p>We have and in-house testing facility to perform test and inspection activities before delivering products to our customer.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="post bitbucket-icon">
+          <div class="stem-overlay">
+            <div class="icon"></div>
+            <div class="stem-mask"></div>
+          </div>
+
+          <div class="post-content">
+<!--             <p class="meta">Written yesterday at 8:56 pm</p> -->
+            <h2 class="post-title">Design and Performance</h2>
+            <div class="entry-content">
+              <p>Our products stand for their design and excellent performance. Our design is based on putpose and function aiming at excellence of outcome.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="post music-icon" data-stem-color="yellow">
+          <div class="stem-overlay">
+            <div class="icon"></div>
+            <div class="stem-mask"></div>
+          </div>
+
+          <div class="post-content">
+<!--             <p class="meta">Written yesterday at 8:56 pm</p> -->
+            <h2 class="post-title">Research and Innovation</h2>
+            <div class="entry-content">
+              <p>We adopt technological improvements after in-depth investigations and tests in order to be sure that we offer our customers only state-of-the-art and reliable products.</p>
+            </div>
+          </div>
+        </article>
+        <article class="post bitbucket-icon">
+          <div class="stem-overlay">
+            <div class="icon"></div>
+            <div class="stem-mask"></div>
+          </div>
+
+          <div class="post-content">
+<!--             <p class="meta">Written yesterday at 8:56 pm</p> -->
+            <h2 class="post-title">Customisation and Diversity</h2>
+            <div class="entry-content">
+              <p>Flexible specification systems capable of meeting the high expectations of designers and specifiers.</p>
+            </div>
+          </div>
+        </article>
+      </div> <!-- post-wrapper -->
+
+      <div class="single-stem-icon scroll-to-top trigger-scroll-to-top"></div>
+
+    </div> <!-- section-inner -->
+  </div> <!-- main-content -->
+
+  <footer class="footer section">
+    <div class="section-inner">
+      <div class="good-bye">
+        <p>Click the last one to scroll back up.</p>
+
+      </div> <!-- section-inner -->
+  </footer> <!-- footer -->
 </body>
+<script src="js/whyUs.js"></script>
 </html>

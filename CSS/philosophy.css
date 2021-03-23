@@ -6,7 +6,7 @@
 }
 
 nav {
-    position: fixed;
+    position: static;
     top: 0;
     width: 100%;
     display: flex;
@@ -136,13 +136,6 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.quote{
-	padding-top: 100px;  
-    width: 700px;
-    padding-left: 80px;
-    padding-bottom: 50px;
-    height: auto;
-}
 
 p{
 	font-style: italic;
@@ -198,4 +191,21 @@ h1{
 	padding-right: 100px;
 	padding-top: 90px;
 	width: 50%;
+}
+
+.quote, .speaker{
+    color: #FFFF00
+}
+
+.quote{
+    font-size: 350%;
+    padding-top: 20px;
+    width: 60%;
+    padding-left: 80px;
+    padding-bottom: 50px;
+    height: auto;
+}
+
+.speaker{
+    font-size: 200%;
 }

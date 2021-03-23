@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Mr.Light</title>
-	<link rel="icon" type="image/png" href="images/mrlight.png"/>
-	<link rel="stylesheet" href="CSS/approach.css">
-	<link href="https://fonts.googleapis.com/css?family=Psoppins%26display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="CSS/approach.css">
 </head>
 <body>
-	<nav>
-	    <div class="logo">
-	        <a href="index.html"><img src="images/mrlight.png" alt="logo" style="width: 200px"></a>
-	    </div>
-	    <ul class="nav-links">
-	    	<li><a href="index.html">Home</a></li>
-	        <li><a href="philosophy.html">Philosophy</a></li>
-	        <li><a href="whyUs.html">Why Mr.Light</a></li>
-	        <li><a href="aboutUs.html">About Us</a></li>
-	        <li><a href="approach.html">Approach</a></li>
-	    </ul>
-	    <div class="burger">
-	        <div class="line1"></div>
-	        <div class="line2"></div>
-	        <div class="line3"></div>
-	    </div>
-	</nav>
-	<script>
-		function navSlide() {
-		    const burger = document.querySelector(".burger");
-		    const nav = document.querySelector(".nav-links");
-		    const navLinks = document.querySelectorAll(".nav-links li");
-		    
-		    burger.addEventListener("click", () => {
-		        //Toggle Nav
-		        nav.classList.toggle("nav-active");
-		        
-		        //Animate Links
-		        navLinks.forEach((link, index) => {
-		            if (link.style.animation) {
-		                link.style.animation = ""
-		            } else {
-		                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-		            }
-		        });
-		        //Burger Animation
-		        burger.classList.toggle("toggle");
-		    });
-		    
-		}
+	<div id="fullPage">
+		<div class="section s1">
+			<h1>Our Approach</h1>
+			<p>We bring a complete solution orientation service from across the world, by catering to the Indoor, Outdoor Technical Architectural lighting solutions as well as the Decorative lighting. This enables us to provide the entire need of a project under one roof</p>
 
-		navSlide();
+		</div>
+		<div class="section s2">
+
+			<div class="slide one">
+				<p>Perfect tones with perfect amount of light, makes places perfect to live in</p>
+				<img src="images/approach/1.png" id="journeyimg">
+				<p>Zonal lighting with delineated beams of light visually seperates one area from another</p>
+
+			</div>
+			<div class="slide two">
+				<p>CREATING FUNCTIONAL ZONES: HIERARCHIES OF PERCEPTION</p>
+				<img src="images/approach/2.png" id="journeyimg">
+				<img src="images/approach/3.png" id="journeyimg">
+				<img src="images/approach/4.png" id="journeyimg">
+				<img src="images/approach/5.png" id="journeyimg">
+				<p>Individual lighting treatments do not provide an optimum visual comfort, how they come together and perform lets the lighting do its magic.</p>
+			</div>
+		</div>
+		<div class="section s3">
+			<div class="slide one">
+				<p>COMBINING INTERIORS & EXTERIORS</p>
+				<img src="images/approach/6.png" id="main">
+				<img src="images/approach/7.png" id="sub">
+				<img src="images/approach/8.png" id="sub">
+<!-- 				<p>Looking in without indoor lighting Looking in with indoor lighting</p> -->
+			</div>
+			<div class="slide two">
+				<p>VERTICAL AND HORIZONTAL SPACES</p>
+				<img src="images/approach/9.png" id="sub">
+				<!-- <p>Accent Lighting</p> -->
+				<img src="images/approach/10.png" id="sub">
+		<!-- 		<p>Wallwashing</p> -->
+				<img src="images/approach/11.png" id="main">
+<!-- 				<p>Washing the wall on both the zones, combining it</p> -->
+				<p>This is well balanced with the Accents in the interiors</p>
+			</div>
+			<div class="slide three">
+				<p>LIGHTING CREATES HEIRACHIES IN VISUAL SPACE</p>
+				<p>The directed light of the spotlights produces a rhythm on the thoroughfare and allows the tables to be islands of communication<img src="images/approach/12.png"></p>
+				<p>The illuminated objects on the tables form decorative highlights in the room. The illumination outdoors reveals the depth.<img src="images/approach/13.png"></p>
+			</div>
+		</div>
+		<div class="section s4">
+			<h1>Why Mr. Light</h1>
+		</div>
+		<div class="section s5">
+			<h1>Approach</h1>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script>
+		new fullpage('#fullPage', {
+			autoScrolling: true,
+			navigation: true,
+			anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
+			navigationTooltips: ['Home', 'Philosophy', 'About us', 'Why Mr.Light', 'Approach'],
+			scrollingSpeed: 1000,
+			controlArrows: false,
+			slidesNavigation: true
+		})
 	</script>
 </body>
 </html>
